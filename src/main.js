@@ -9,6 +9,14 @@ import './plugins/element'
 import axios from 'axios'
 
 axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
+
+axios.interceptors.request.use(config =>{
+  // console.log(config);
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  // 必须return出来
+  return config
+})
+
 Vue.prototype.$http = axios
 
 // 关闭vue的生产提示

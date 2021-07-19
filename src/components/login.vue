@@ -87,17 +87,17 @@ export default {
         // console.log(result.data);
         if (result.data.meta.status !== 200) {
           // console.log('登陆失败');
-          this.$message.error('登录失败')
-        }else{
+          this.$message.error("登录失败");
+        } else {
           // console.log('登录成功');
-          this.$message.success('登录成功')
+          this.$message.success("登录成功");
           // 1.将登录成功后的登录信息保存到本地的sessionStorage中
-              //  1.1 项目中出了登录之外的其他API接口，必须在登录之后才能访问
-              //  1.2 token只应用在当前网站打开期间sheng生效，所以将token保存在sessionStorage中
-        window.sessionStorage.setItem('token',result.data.data.token)
-        // console.log(result.data.data.token);
-        this.$router.push('/home')
+          //  1.1 项目中除了登录之外的其他API接口，必须在登录之后才能访问
+          //  1.2 token只应用在当前网站打开期间生效，所以将token保存在sessionStorage中
+          window.sessionStorage.setItem("token", result.data.data.token);
+          // console.log(result.data.data.token);
           // 2.通过编程式导航跳转到后台的主页，路由地址是/home
+          this.$router.push("/home");
         }
       });
     },
