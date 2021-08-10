@@ -5,7 +5,9 @@ import Router from 'vue-router'
 const login = () => import('./components/login.vue')
 const home = () => import('./components/home.vue')
 const come = () => import('./components/come')
-const user = () => import('./components/user')
+const user = () => import('./components/user/user')
+const rights = () => import('./components/power/rights')
+const roles = () => import('./components/power/roles')
 
 Vue.use(Router)
 
@@ -33,7 +35,15 @@ const router = new Router({
         {
           path: '/users',
           component: user
-        }
+        },
+        {
+          path:'/rights',
+          component:rights
+        },
+        {
+          path:'/roles',
+          component:roles
+        },
       ]
     },
 
