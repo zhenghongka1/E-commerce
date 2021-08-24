@@ -7,10 +7,11 @@ import './assets/CSS/common.css'
 // import 'element-ui/lib/theme-chalk/index.css'
 import './plugins/element'
 import axios from 'axios'
+import TreeTable from 'vue-table-with-tree-grid'
 
-axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
+// axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
 
-// axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
+axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
 
 axios.interceptors.request.use(config =>{
   // console.log(config);
@@ -26,6 +27,8 @@ Vue.config.productionTip = false
 
 Vue.use(less)
 // Vue.use(ElementUI)
+
+Vue.component('tree-table',TreeTable)
 
 new Vue({
   router,

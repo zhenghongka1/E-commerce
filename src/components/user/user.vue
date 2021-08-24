@@ -156,7 +156,6 @@
       title="分配角色"
       :visible.sync="setRolesDialogVisible"
       width="50%"
-      @close="setRightDialogClose"
     >
       <div>
         <p>当前的用户：{{ userInfo.username }}</p>

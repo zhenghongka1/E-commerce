@@ -84,7 +84,7 @@ export default {
       const { data: result } = await this.$http.get("menus");
       // console.log(result);
       if (result.meta.status !== 200)
-        return this, $message.error(result.meta.mag);
+        return this.$message.error(result.meta.mag);
 
       this.menuList = result.data;
     },

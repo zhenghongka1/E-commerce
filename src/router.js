@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import Login from './components/login'
 
 const login = () => import('./components/login.vue')
 const home = () => import('./components/home.vue')
@@ -8,6 +7,7 @@ const come = () => import('./components/come')
 const user = () => import('./components/user/user')
 const rights = () => import('./components/power/rights')
 const roles = () => import('./components/power/roles')
+const cate = () => import('./components/goods/Cate')
 
 Vue.use(Router)
 
@@ -37,16 +37,19 @@ const router = new Router({
           component: user
         },
         {
-          path:'/rights',
-          component:rights
+          path: '/rights',
+          component: rights
         },
         {
-          path:'/roles',
-          component:roles
+          path: '/roles',
+          component: roles
+        },
+        {
+          path: '/categories',
+          component: cate
         },
       ]
     },
-
   ]
 })
 
