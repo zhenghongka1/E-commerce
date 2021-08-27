@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import {
     Aside, Breadcrumb, BreadcrumbItem, Button, Card, Col, Container, Dialog, Form, FormItem, Header, Input, Main, Menu,
-    MenuItem, MenuItemGroup, Message, Option, Pagination, Row, Submenu, Switch, Table, TableColumn, Tooltip, MessageBox, Tag, Tree, Select, Cascader
+    MenuItem, MenuItemGroup, Message, Option, Pagination, Row, Submenu, Switch, Table, TableColumn, Tooltip, MessageBox, Tag, Tree, Select, Cascader, Alert, Tabs, TabPane
 } from 'element-ui'
 
 
@@ -35,6 +35,9 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 
 
 // Message弹窗要在全局配置下

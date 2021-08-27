@@ -97,7 +97,11 @@
           <el-cascader
             v-model="selectkeys"
             :options="ParentCateList"
-            :props="cascaderProps"
+            :props="{
+              expandTrigger: 'hover',
+              ...cascaderProps,
+              checkStrictly: 'true'
+            }"
             @change="ParentCateChange"
             change-on-select
             clearable
@@ -132,8 +136,6 @@
         <el-button type="primary" @click="editCate">确 定</el-button>
       </span>
     </el-dialog>
-  </div>
-</template>
   </div>
 </template>
 
@@ -200,7 +202,6 @@ export default {
       ParentCateList: [],
       // 指定级联选择器的配置对象
       cascaderProps: {
-        expandTrigger: "hover",
         value: "cat_id",
         label: "cat_name",
         children: "children",
