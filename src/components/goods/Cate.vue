@@ -103,9 +103,7 @@
               checkStrictly: 'true'
             }"
             @change="ParentCateChange"
-            change-on-select
             clearable
-            filterable
           ></el-cascader>
         </el-form-item>
       </el-form>
@@ -232,7 +230,7 @@ export default {
         return this.$message.error("获取商品分类失败");
       }
 
-      //   console.log(result.data);
+        // console.log(result.data);
 
       this.cateList = result.data.result;
 

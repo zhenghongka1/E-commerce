@@ -226,9 +226,9 @@ export default {
       cateList: [],
       cateListProps: {
         expandTrigger: "hover",
-        value: "cat_id",
-        label: "cat_name",
-        children: "children",
+        value: 'cat_id',
+        label: 'cat_name',
+        children: 'children'
       },
       selectCateKeys: [],
       activeName: "many",

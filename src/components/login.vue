@@ -73,7 +73,7 @@ export default {
   methods: {
     resetLoginForm() {
       // console.log(this);
-      // this.$refs.loginFormRef.resetFields()  重置后为双向绑定时候的用户名和密码,resetFields为emelemtUI的内置方法
+      this.$refs.loginFormRef.resetFields()  
 
       (this.infoForm.username = ""), (this.infoForm.password = "");
     },
@@ -97,7 +97,7 @@ export default {
           window.sessionStorage.setItem("token", result.data.data.token);
           // console.log(result.data.data.token);
           // 2.通过编程式导航跳转到后台的主页，路由地址是/home
-          this.$router.push("/home");
+          this.$router.push("/come");
         }
       });
     },

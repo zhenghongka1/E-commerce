@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import {
     Aside, Breadcrumb, BreadcrumbItem, Button, Card, Col, Container, Dialog, Form, FormItem, Header, Input, Main, Menu,
-    MenuItem, MenuItemGroup, Message, Option, Pagination, Row, Submenu, Switch, Table, TableColumn, Tooltip, MessageBox, Tag, Tree, Select, Cascader, Alert, Tabs, TabPane
+    MenuItem, MenuItemGroup, Message, Option, Pagination, Row, Submenu, Switch, Table, TableColumn, Tooltip, MessageBox, Tag, Tree, Select, Cascader, Alert, Tabs, TabPane, Steps, Step, CheckboxGroup, Checkbox, Upload
 } from 'element-ui'
 
 
@@ -11,7 +11,7 @@ Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
 Vue.use(Container)
-Vue.use(Header)
+Vue.use(Header) 
 Vue.use(Aside)
 Vue.use(Main)
 Vue.use(Menu)
@@ -38,6 +38,11 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(Upload)
 
 
 // Message弹窗要在全局配置下
